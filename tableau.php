@@ -14,7 +14,7 @@
     <title>Tableau associatif</title>
 </head>
 <body>
-   <table>
+   <table border="1px">
     <th>
         <td>Prénom</td>
         <td>Nom</td>
