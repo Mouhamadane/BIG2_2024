@@ -16,14 +16,16 @@
 <body>
    <table border=1>
     <tr>
+        <td>Clé</td>
         <td>Prénom</td>
         <td>Nom</td>
         <td>Ville</td>
         <td>Age</td>
     </tr>
     <?php
-    foreach ($personnes as $person) {?>
+    foreach ($personnes as $key=>$person) {?>
         <tr>
+            <td><?php echo $key?></td>
             <td><?php echo $person["prenom"]?></td>
             <td><?php echo $person["nom"] ?></td>
             <td><?php echo $person["ville"] ?></td>
