@@ -11,14 +11,11 @@ function pgcd($a, $b){
 function isPremier($nombre, $div=2) {
     if ($div*$div <= $nombre) {
         if ($nombre % $div == 0) {
-            return 'Non premier';
+            return false;
         }
-        else {
-            return isPremier($nombre, $div+ 1);
-        }
-    }else {
-        return 'Premier';
-    } 
+        return isPremier($nombre, $div+ 1);
+    }
+    return true;
 }
-// echo isPremier(25);
-// echo isPremier(5);
+echo isPremier(25);
+echo isPremier(15);
