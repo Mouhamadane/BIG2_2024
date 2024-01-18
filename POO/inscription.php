@@ -1,5 +1,6 @@
 <?php
 require_once("./Connexion.php");
+global $connect;
 
 ?>
 <!DOCTYPE html>

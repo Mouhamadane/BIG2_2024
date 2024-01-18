@@ -13,3 +13,4 @@
     }catch (PDOException $e){
         die("Une erreur est survenue lors de la connexion à la Base de données !");
     }
+    

@@ -9,18 +9,9 @@ class Etudiant {
     protected $password;
 
    // Constructeur le principe de la surcharge
-    public function __construct($row = NULL){
-        if ($row != NULL) {
-            $this -> id = $row["id"];
-            $this -> prenom = $row["prenom"];
-            $this -> nom = $row["nom"];
-            $this -> adresse = $row["adresse"];
-            $this -> password = $row["password"];
-        }
-    }
 
     //Getters
-    public function getID() {
+    public function getId() {
         return $this->id;
     }
     public function getPrenom() {
